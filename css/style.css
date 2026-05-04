@@ -177,6 +177,14 @@ section {
   color: var(--blush-dark);
 }
 
+.nav-butterfly {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+  display: inline-block;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -883,6 +891,13 @@ section {
   font-size: 0.85rem;
   margin-top: 4px;
   color: rgba(255,255,255,0.4);
+}
+
+.footer-mark {
+  height: 120px;
+  width: auto;
+  display: block;
+  opacity: 0.9;
 }
 
 .footer-links {

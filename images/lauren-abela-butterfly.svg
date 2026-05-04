@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="236 24 208 88">
+  <path d="M340,72 C318,48 292,32 268,43 C248,53 248,70 261,77 C274,84 306,79 340,72" fill="#F4CCCC" stroke="#C8A0A0" stroke-width="0.6"/>
+  <path d="M340,72 C362,48 388,32 412,43 C432,53 432,70 419,77 C406,84 374,79 340,72" fill="#F4CCCC" stroke="#C8A0A0" stroke-width="0.6"/>
+  <path d="M338,70 C322,58 304,50 286,54" stroke="#C8A0A0" stroke-width="0.4" fill="none" stroke-linecap="round"/>
+  <path d="M342,70 C358,58 376,50 394,54" stroke="#C8A0A0" stroke-width="0.4" fill="none" stroke-linecap="round"/>
+  <path d="M340,72 C324,80 304,90 288,97 C272,104 270,93 278,84 C289,74 316,71 340,72" fill="#E2D5F0" stroke="#B8AACC" stroke-width="0.6"/>
+  <path d="M340,72 C356,80 376,90 392,97 C408,104 410,93 402,84 C391,74 364,71 340,72" fill="#E2D5F0" stroke="#B8AACC" stroke-width="0.6"/>
+  <ellipse cx="340" cy="72" rx="2.5" ry="8" fill="#2C2C2A"/>
+  <path d="M338,64 C334,56 330,50 327,44" stroke="#2C2C2A" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M342,64 C346,56 350,50 353,44" stroke="#2C2C2A" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M327,44 C326,43 322,42 322,39 C322,36 327,35 327,37 C327,35 332,36 332,39 C332,42 328,43 327,44 Z" fill="#2C2C2A"/>
+  <path d="M353,44 C352,43 348,42 348,39 C348,36 353,35 353,37 C353,35 358,36 358,39 C358,42 354,43 353,44 Z" fill="#2C2C2A"/>
+</svg>
