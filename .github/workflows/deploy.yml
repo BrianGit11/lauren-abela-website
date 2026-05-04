@@ -22,7 +22,7 @@ jobs:
             set ssl:verify-certificate no;
             set ftp:passive-mode true;
             open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}';
-            mirror -R --verbose \
+            mirror -R --verbose --no-delete \
               --exclude='^\.git/' \
               --exclude='^\.github/' \
               --exclude='^README\.md$' \
