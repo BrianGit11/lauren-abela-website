@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Lauren Abela — Speaker Inquiry</title>
+  <meta name="description" content="Book Lauren Abela for your next event. She speaks at universities, high schools, conferences, and corporate events across Canada." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Lauren <span>Abela</span></a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li class="nav-cta"><a href="contact.html" class="active">Book Lauren</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="section-label">Book Lauren</p>
+    <h1>Let's make your event unforgettable.</h1>
+    <p class="lead">Fill out the form below and Lauren will get back to you within 48 hours. No pressure, no scripts — just a real conversation about what's right for your audience.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Info Panel -->
+        <div class="contact-info">
+          <h2>A few things to know</h2>
+          <p>Lauren speaks across Canada and is available for virtual events worldwide. She customizes every talk to the audience — no two events are exactly alike.</p>
+
+          <div class="contact-detail">
+            <span>📍</span>
+            <span>Based in Vaughan, Ontario, Canada</span>
+          </div>
+          <div class="contact-detail">
+            <span>✈️</span>
+            <span>Available Canada-wide &amp; virtual globally</span>
+          </div>
+          <div class="contact-detail">
+            <span>📩</span>
+            <a href="mailto:lauren.abela33@gmail.com">lauren.abela33@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>💼</span>
+            <a href="https://www.linkedin.com/in/lauren-abela/" target="_blank" rel="noopener">linkedin.com/in/lauren-abela</a>
+          </div>
+
+          <div style="margin-top: 40px; padding: 24px; background-color: var(--cream); border-radius: 16px;">
+            <p style="font-family: Georgia, serif; font-style: italic; font-size: 1rem; color: var(--charcoal); margin: 0;">
+              "You Belong Here" isn't just a tagline — it's the invitation she extends to every audience. Whatever room she walks into, she means it.
+            </p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- Replace YOUR_FORM_ID with your Formspree endpoint, or swap for another form handler -->
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first_name" required placeholder="Jane" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last_name" required placeholder="Smith" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="jane@organization.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="organization">Organization / School *</label>
+              <input type="text" id="organization" name="organization" required placeholder="University of Toronto" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event_type">
+                  <option value="">Select one…</option>
+                  <option>University / College Event</option>
+                  <option>High School Assembly</option>
+                  <option>Student Leadership Conference</option>
+                  <option>DEI / Inclusion Event</option>
+                  <option>Disability Advocacy Conference</option>
+                  <option>Best Buddies Event</option>
+                  <option>Graduation / Commencement</option>
+                  <option>Corporate Event</option>
+                  <option>Virtual Event</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="event-date">Approximate Event Date</label>
+                <input type="text" id="event-date" name="event_date" placeholder="Fall 2026, October 2026…" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="audience-size">Expected Audience Size</label>
+              <select id="audience-size" name="audience_size">
+                <option value="">Select range…</option>
+                <option>Under 50</option>
+                <option>50–150</option>
+                <option>150–500</option>
+                <option>500+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Lauren about your event *</label>
+              <textarea id="message" name="message" required placeholder="What's the event? Who's in the audience? What do you want them to walk away feeling? The more you share, the better Lauren can prepare."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;">Send Inquiry</button>
+            <p class="form-note">Lauren responds within 48 hours. No bots, no auto-responders — just Lauren.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Lauren Abela</div>
+        <div class="footer-tagline">You Belong Here.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/lauren-abela/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer-inner footer-copy">
+      &copy; 2026 Lauren Abela. All rights reserved. &nbsp;·&nbsp; Vaughan, Ontario, Canada
+    </div>
+  </footer>
+
+</body>
+</html>
