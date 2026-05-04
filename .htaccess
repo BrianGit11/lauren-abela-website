@@ -1,0 +1,11 @@
+# Ensure SVG files are served with the correct MIME type (required for favicon)
+AddType image/svg+xml .svg .svgz
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force www to non-www
+RewriteCond %{HTTP_HOST} ^www\.laurenabela\.com [NC]
+RewriteRule ^(.*)$ https://laurenabela.com/$1 [L,R=301]
