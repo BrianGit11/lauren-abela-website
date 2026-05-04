@@ -26,6 +26,7 @@ jobs:
               --exclude='^\.git/' \
               --exclude='^\.github/' \
               --exclude='^README\.md$' \
+              --exclude='^\.htaccess$' \
               ./ /public_html/;
             quit
           "
