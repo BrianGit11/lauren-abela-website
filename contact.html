@@ -75,6 +75,7 @@
         <div>
           <form class="booking-form" action="https://formspree.io/f/mojgvnko" method="POST">
             <input type="hidden" name="_subject" value="New booking inquiry — laurenabela.com" />
+            <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
 
             <div class="form-row">
               <div class="form-group">
@@ -139,7 +140,15 @@
 
             <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;">Send Inquiry</button>
             <p class="form-note">Lauren responds within 48 hours. No bots, no auto-responders — just Lauren.</p>
+            <p class="form-note form-error" style="display:none; color:#B3261E;">Hmm — your message didn't go through. Please try again, or email Lauren directly at <a href="mailto:lauren.abela33@gmail.com">lauren.abela33@gmail.com</a>.</p>
           </form>
+
+          <!-- Shown in place of the form after a successful submission -->
+          <div class="form-success" style="display:none; background: linear-gradient(135deg, var(--blush) 0%, var(--lavender) 100%); border-radius: 20px; padding: 48px 36px; text-align: center;">
+            <div style="font-size: 2.4rem; margin-bottom: 12px;">🦋</div>
+            <h3 style="margin-bottom: 12px;">Thank you — your message is on its way.</h3>
+            <p style="margin: 0;">Lauren reads every inquiry herself, and she'll get back to you within 48 hours. In the meantime, you can find her on <a href="https://www.linkedin.com/in/lauren-abela/" target="_blank" rel="noopener" style="color: var(--charcoal); font-weight: 600;">LinkedIn</a>.</p>
+          </div>
         </div>
 
       </div>
@@ -163,6 +172,36 @@
       &copy; 2026 Lauren Abela. All rights reserved. &nbsp;·&nbsp; Vaughan, Ontario, Canada
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var form = document.querySelector('.booking-form');
+      if (!form || !window.fetch) return;
+      var button = form.querySelector('button[type="submit"]');
+      var errorNote = form.querySelector('.form-error');
+      var success = document.querySelector('.form-success');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errorNote.style.display = 'none';
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(function (response) {
+          if (!response.ok) throw new Error('submit failed');
+          form.style.display = 'none';
+          success.style.display = 'block';
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }).catch(function () {
+          errorNote.style.display = 'block';
+          button.disabled = false;
+          button.textContent = 'Send Inquiry';
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
